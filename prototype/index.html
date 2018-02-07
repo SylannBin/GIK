@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prototype</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css">
+</head>
+<body>
+    <nav class="navbar is-dark">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="gik-logo.png" alt="GIK: Games I keep" width="112" height="28">
+            </a>
+            <button class="button navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item"> Store </a>
+                <a class="navbar-item"> Trending </a>
+            </div>
+            <div class="navbar-end" id="navRightDisconnected">
+                <a class="navbar-item" id="btnSignin"> Sign in </a>
+                <a class="navbar-item" id="btnLogin"> Log in </a>
+            </div>
+            <div class="navbar-end" id="navRightConnected" style="display: none">
+                <div class="navbar-item"> Romain Vincent </div>
+                <a class="navbar-item" id="btnLogout"> Log out </a>
+            </div>
+        </div>
+    </nav>
+    <div class="columns">
+
+        <aside class="menu column is-one-third">
+            <p class="menu-label">
+                General
+            </p>
+            <ul class="menu-list">
+                <li><a>Dashboard</a></li>
+                <li><a>Customers</a></li>
+            </ul>
+            <p class="menu-label">
+                Administration
+            </p>
+            <ul class="menu-list">
+                <li><a>Team Settings</a></li>
+                <li>
+                <a class="is-active">Manage Your Team</a>
+                <ul>
+                    <li><a>Members</a></li>
+                    <li><a>Plugins</a></li>
+                    <li><a>Add a member</a></li>
+                </ul>
+                </li>
+                <li><a>Invitations</a></li>
+                <li><a>Cloud Storage Environment Settings</a></li>
+                <li><a>Authentication</a></li>
+            </ul>
+            <p class="menu-label">
+                Transactions
+            </p>
+            <ul class="menu-list">
+                <li><a>Payments</a></li>
+                <li><a>Transfers</a></li>
+                <li><a>Balance</a></li>
+            </ul>
+        </aside>
+    
+    
+        <div class="column" style="background:#eee">
+            CONTENT
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
